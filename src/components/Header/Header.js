@@ -6,7 +6,7 @@ import {
   AiFillLinkedin,
   AiOutlineContacts,
 } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import { DiMaterializecss } from "react-icons/di";
 
 import {
   Container,
@@ -30,7 +30,7 @@ const Header = () => (
             marginBottom: "16px",
           }}
         >
-          <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          <DiMaterializecss size="3rem" /> <Span>Portfolio</Span>
         </a>
       </Link>
     </Div1>
