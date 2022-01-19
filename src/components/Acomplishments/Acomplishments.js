@@ -17,7 +17,7 @@ const data = [
     number: 2022,
     text: "Titre professionnel Chef de projet de développement d'applications web et mobile (RNCP 6 - Niveau Bac +3/4)",
   },
-  { number: 2022, text: "Builded my first responsive website (this one)" },
+  { number: 2022, text: "Built my first responsive website (this one)" },
 ];
 
 const Acomplishments = () => (
