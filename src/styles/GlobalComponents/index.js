@@ -235,7 +235,6 @@ export const Btn3 = styled.button`
 
   &:hover {
     border: 1px solid #fff;
-    transform: scale(1.2);
   }
 
   &:active {
@@ -246,6 +245,8 @@ export const Btn3 = styled.button`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
+    position: fixed;
+    left: -800px;
     margin-bottom: 64px;
     padding: 1px 1px;
     width: 7%;
@@ -254,9 +255,10 @@ export const Btn3 = styled.button`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    position: fixed;
+    left: -400px;
     margin-bottom: 40px;
     display: flex;
-
     padding: 2px;
     width: 10%;
     font-size: 29px;

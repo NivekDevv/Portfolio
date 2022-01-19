@@ -81,13 +81,13 @@ export const CarouselItemTitle = styled.h4`
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
     margin-bottom: 4px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 `;
@@ -115,12 +115,12 @@ export const CarouselItemText = styled.p`
   padding-right: 16px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     padding-right: 32px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 16px;
     padding-right: 0;
   }
