@@ -14,7 +14,8 @@ export const FooterWrapper = styled.section`
 `;
 
 export const LinkItem = styled.a`
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 16px;
@@ -82,9 +83,8 @@ export const Slogan = styled.p`
   color: rgba(255, 255, 255, 0.5);
   min-width: 280px;
   letter-spacing: 0.02em;
-  font-size: 18px;
+  font-size: 11px;
   line-height: 30px;
-  padding: 1rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 16px;

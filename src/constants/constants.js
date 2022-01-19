@@ -15,8 +15,8 @@ export const projects = [
       "This portfolio was built with React.JS and next. Many styled-components was created to be used everywhere on the app. This website is entirely responsive and i used ityped for the dynamic text on the hero.",
     image: "/images/portfolio.png",
     tags: ["React", "Next", "Styled-Components"],
-    source: "https://my-moviez.herokuapp.com/",
-    visit: "https://github.com/NivekDevv/MyMoviz",
+    source: "https://kevin-toussaint.com/",
+    visit: "https://github.com/NivekDevv/Portfolio",
     id: 3,
   },
   {
@@ -47,7 +47,17 @@ export const projects = [
     tags: ["React", "Reactstrap", "Axios"],
     source: "https://my-moviez.herokuapp.com/",
     visit: "https://github.com/NivekDevv/MyMoviz",
-    id: 3,
+    id: 4,
+  },
+  {
+    title: "More on my github",
+    description:
+      "You can find the rest of my projects directly on my github, feel free to take a look !",
+    image: "/images/github.png",
+    tags: ["GitHub"],
+    source: "https://github.com/NivekDevv",
+    visit: "https://github.com/NivekDevv",
+    id: 5,
   },
 ];
 

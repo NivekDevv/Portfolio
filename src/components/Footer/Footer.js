@@ -19,7 +19,7 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>LET'S WORK TOGETHER</LinkTitle>
           <LinkItem href="mailto:toussaint.kevin3@gmail.com">
             toussaint.kevin3@gmail.com
           </LinkItem>

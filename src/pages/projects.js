@@ -58,11 +58,7 @@ const Projects = () => (
         )}
       </GridContainer>
     </Section>
-    <Section nopadding>
-      <SectionText style={{ marginLeft: "25%" }} main>
-        You can find more on my github...
-      </SectionText>
-    </Section>
+
     <Footer />
   </>
 );
