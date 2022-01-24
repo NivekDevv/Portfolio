@@ -27,6 +27,10 @@ export const Box = styled.div`
   border-radius: 12px;
   height: 235px;
   padding: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 250px;
   }
@@ -52,7 +56,7 @@ export const BoxNum = styled.h5`
   line-height: 40px;
   letter-spacing: 0.01em;
   color: #ffffff;
-  margin-bottom: 8px;
+  margin-bottom: 2.5px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 28px;
