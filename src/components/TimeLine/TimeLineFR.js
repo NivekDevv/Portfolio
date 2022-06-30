@@ -17,9 +17,9 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { TimeLineData } from "../../constants/constants";
+import { TimeLineDataFR } from "../../constants/constants";
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const TOTAL_CAROUSEL_COUNT = TimeLineDataFR.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -34,7 +34,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
+        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineDataFR.length)
       );
 
       scroll(carouselRef.current, scrollLeft);
@@ -46,7 +46,7 @@ const Timeline = () => {
       const index = Math.round(
         (carouselRef.current.scrollLeft /
           (carouselRef.current.scrollWidth * 0.7)) *
-          TimeLineData.length
+          TimeLineDataFR.length
       );
 
       setActiveItem(index);
@@ -67,17 +67,18 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Hey, my name is Kévin Toussaint, I am a 26 years old french web
-        developer. I have just completed a 10-week-long coding bootcamp which
-        goal was to build 10 applications, in 10 weeks, and which ended with an
-        MVP together with 2 fellow students, that we presented in front of a
-        board for our final examination. I have been practicing coding for 6
-        months, and, although I am still a junior, still a beginner, my
-        motivation is at a 100%!
+        Bonjour, je suis Kévin Toussaint, un jeune développeur web de 26 ans. Je
+        viens de terminer un coding bootcamp de 10 semaines dans lequel le but
+        était de développer 10 applications en 10 semaines et qui finissait par
+        le développement d'un MVP en équipe de 3, que l'on se devait de
+        présenter à un jury pour le passage de l'examen. Je pratique depuis
+        maintenant 6 mois, je suis toujours junior, je me considère toujours
+        comme un débutant mais ma motivation est à 100% pour devenir un jour,
+        moi aussi, un grand développeur.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
+          {TimeLineDataFR.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
               final={index === TOTAL_CAROUSEL_COUNT - 1}
@@ -130,7 +131,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => (
+        {TimeLineDataFR.map((item, index) => (
           <CarouselButton
             key={index}
             index={index}

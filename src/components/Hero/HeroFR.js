@@ -20,33 +20,21 @@ function Hero() {
       strings: ["Front-End", "Back-End", "FullStack"],
     });
   }, []);
-  const [lang, setLang] = useState(false);
-
-  useEffect(() => {
-    const data = window.localStorage.getItem("MY_WELCOME_PORTFOLIO");
-    if (data !== null) setLang(JSON.parse(data));
-  }, []);
-
-  useEffect(() => {
-    window.localStorage.setItem("MY_WELCOME_PORTFOLIO", JSON.stringify(lang));
-  }, [lang]);
-
-  var styleBorderEn = { width: "40px", margin: "10px", cursor: "pointer" };
 
   return (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hi There, I'm
+          Bonjour, je suis
           <br />
           <Span>Kevin Toussaint</Span> <br />
-          Web Developer
+          Développeur Web
           <Span2 style={{ marginLeft: "2rem" }} ref={textRef}></Span2>
         </SectionTitle>
         <SectionText2>
-          Are you looking for a fresh junior web developer? Highly motivated and
-          fast learner? I'm here for you! You can download my CV/Resume by
-          clicking on the button below.
+          Êtes-vous à la recherche d'un développeur web junior? Très motivé et
+          qui apprend rapidement? Je suis là pour vous! Vous pouvez télecharger
+          mon CV en cliquant sur le bouton ci-dessous.
           <br />
         </SectionText2>
         <Button
@@ -57,7 +45,7 @@ function Hero() {
             //https://drive.google.com/uc?export=download&id=17tKOhx1MYfXvIFGFKZvj5f8Gnuw1IuCi CV CHEF DE PROJET
           }
         >
-          <td>My CV</td>
+          <td>Mon CV</td>
         </Button>
       </LeftSection>
     </Section>

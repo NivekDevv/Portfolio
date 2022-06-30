@@ -12,17 +12,17 @@ const data = [
     number: 2014,
     text: "Baccalauréat Maintenance des Equipements Industriels",
   },
-  { number: 2021, text: "Built 10 web and mobile applications in 10 weeks" },
+  { number: 2021, text: "Développement de 10 applications en 10 semaines" },
   {
     number: 2022,
     text: "Titre professionnel Développement d'applications web et mobile (RNCP 6 - Niveau Bac +3)",
   },
-  { number: 2022, text: "Built my first responsive website (this one)" },
+  { number: 2022, text: "Réalisation de mon premier site web (celui-ci)" },
 ];
 
 const Acomplishments = () => (
   <Section>
-    <SectionTitle>Personal Acomplishments</SectionTitle>
+    <SectionTitle>Accomplissement Personnel</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
